@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+    <script type="text/javascript">
+      function pop(div) {
+        document.getElementById(div).style.display = "block";
+      }
+      function hide(div) {
+        document.getElementById(div).style.display = "none";
+      }
+      function popSignup(div, div2) {
+        document.getElementById(div).style.display = "block";
+        document.getElementById(div2).style.display = "none";
+      }
+      //To detect escape button
+      document.onkeydown = function(evt) {
+        evt = evt || window.event;
+        if (evt.keyCode == 27) {
+          hide("popDiv");
+        }
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="filter_icon.png" class="filter_icon" />
+    <div class="outer_div">
+      <p class="tags">Tags(tcf tcf tcf tcf tcf)</p>
+      <select class="tcf_feed">
+        <option>TCF Feed</option>
+      </select>
+      <select class="tcf_feed">
+        <option>TCF Feed</option>
+      </select>
+    </div>
+    <div class="sign_in">
+      <a href="#" onclick="pop('popDivSignin')"> SIGN IN</a>
+    </div>
+    <br />
+    <div class="blog_section">
+      <div class="blog">
+        <img src="scenerysac.jpg" />
+        <p id="title" class="blog_text">A Loving Nature Is A Truest Wisdom</p>
+        <textarea
+          id="date"
+          style="margin-top: 48px;margin-left: -450px;"
+          class="text_simple"
+          disabled
+        >
+14th October 2019</textarea
+        >
+        <textarea id="author" class="text_simple" disabled>
+Rakesh Kumar</textarea
+        >
+        <textarea id="domain" disabled class="text_simple">#nature</textarea>
+        <p style="font-size: 15px;margin-left: 15px;">
+          Take a moment to close your eyes and consider the sights,sounds and
+          smells that you imagine<br />when you think about being in nature.
+          Perhaps you see a tiny trail meander through a dense<br />forest or
+          smell blossoming wild flowers as you summit a mountain peak.
+        </p>
+        <a href="" class="read_more_link"><strong>Read More >></strong></a>
+      </div>
+      <div class="blog">
+        <img src="androidsac.png" />
+        <p id="title" class="blog_text">
+          Build A Simple Blog App With Firebase In Android Studio
+        </p>
+        <textarea
+          id="date"
+          style="margin-top: 48px;margin-left: -710px;"
+          disabled
+          class="text_simple"
+        >
+14th October 2019</textarea
+        >
+        <textarea id="author" disabled class="text_simple">Atul Kumar</textarea>
+        <textarea id="domain" disabled class="text_simple">
+#appdevelopment</textarea
+        >
+        <p style="font-size: 15px;margin-left: 15px;margin-top: 8px;">
+          Firebase is a Backend-as-a-Service that started as a YC11 startup and
+          grew up into<br />a next generation app development platform on Google
+          Cloud Platform.
+        </p>
+        <a href="" class="read_more_link"><strong>Read More >></strong></a>
+      </div>
+      <div class="blog">
+        <img src="webflowsac.png" />
+        <p id="title" class="blog_text">
+          The Absolute Beginners Guide To WebFlow
+        </p>
+        <textarea
+          id="date"
+          style="margin-top: 48px;margin-left: -530px;"
+          disabled
+          class="text_simple"
+        >
+14th October 2019</textarea
+        >
+        <textarea id="author" disabled class="text_simple">
+Aman Raj Sunderam</textarea
+        >
+        <textarea id="domain" disabled class="text_simple">#webdesign</textarea>
+        <p style="font-size: 15px;margin-left: 15px;margin-top:20px;">
+          In short WebFlow is a web design tool,CMS and hosting platform. Each
+          aspect of the platform<br />is represented by a particular
+          product/feature set______
+        </p>
+        <a href="" class="read_more_link"><strong>Read More >></strong></a>
+      </div>
+    </div>
+    <div class="notice_section">
+      <p class="notice_heading">SAC NOTICE BOARD</p>
+      <div class="notice">
+        <p class="notice_name">RAKESH KUMAR</p>
+        <hr />
+        <p id="heading" class="notice_tag">#tcf2K18</p>
+        <p id="content" class="notice_content">
+          This is the content of notice board
+        </p>
+        <p
+          style="font-size: 10px;margin-top: 0px;margin-left: 15px;color: blue;"
+          id="read_more"
+        >
+          read more
+        </p>
+      </div>
+      <div class="notice">
+        <p class="notice_name">RAKESH KUMAR</p>
+        <hr />
+        <p id="heading" class="notice_tag">#tcf2K18</p>
+        <p id="content" class="notice_content">
+          This is the content of notice board
+        </p>
+        <p
+          style="font-size: 10px;margin-top: 0px;margin-left: 15px;color: blue;"
+          id="read_more"
+        >
+          read more
+        </p>
+      </div>
+      <div class="notice">
+        <p class="notice_name">RAKESH KUMAR</p>
+        <hr />
+        <p id="heading" class="notice_tag">#tcf2K18</p>
+        <p id="content" class="notice_content">
+          This is the content of notice board
+        </p>
+        <p
+          style="font-size: 10px;margin-top: 0px;margin-left: 15px;color: blue;"
+          id="read_more"
+        >
+          read more
+        </p>
+      </div>
+    </div>
+    <div class="social_section">
+      <p>Like Us And Follow</p>
+      <hr />
+      <br /><br />
+      <center>
+        <img src="facebook_image_link.png" id="facebook_link" />
+        <img src="twitter_image_link.jpg" id="twitter_link" />
+        <img src="instagram_image_link.jpg" id="instagem_link" />
+      </center>
+    </div>
+    <center>
+      <div id="popDivSignin" class="ontop login_div">
+        <p class="login_head">LOGIN</p>
+        <img
+          src="crosssac.jpg"
+          class="btn_close"
+          onClick="hide('popDivSignin')"
+        />
+        <p class="email_text"><strong>Email Address</strong></p>
+        <br />
+        <input
+          type="email"
+          name="email"
+          class="login_input"
+          placeholder="Enter email"
+        required/>
+        <p class="pass_text"><strong>Password</strong></p>
+        <input
+          type="password"
+          name="password"
+          class="login_input"
+          placeholder="Enter Password"
+        required/>
+        <center><button class="login_btn">Login</button></center>
+        <center>
+          <p style="font-size: 15px;margin-top: 25px;">
+            <strong
+              >Dont't have an account?
+              <a
+                href="#"
+                onClick="popSignup('popDiv','popDivSignin')"
+                style="text-decoration: none;color: blue;"
+                >Signup here</a
+              ></strong
+            >
+          </p>
+        </center>
+      </div>
+    </center>
+    <center>
+      <div id="popDiv" class="ontop signup_div">
+        <div
+          style="width: 99.5%;height: 55px;border: .5px solid #423f3f;background-color: white;"
+        >
+          <p class="signup_head">Signup</p>
+          <img src="crosssac.jpg" class="btn_close" onClick="hide('popDiv')" />
+        </div>
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          placeholder="First Name"
+					class="input_half"
+					required
+        />
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          placeholder="Last Name"
+          class="input_half_2"
+					required
+					/>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter Email"
+					class="input_full"
+					required
+        />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter Password`"
+					class="input_full"
+					required
+        />
+        <input
+          type="password"
+          id="confirmpassword"
+          name="confirmpassword"
+          placeholder="Confirm Password"
+					class="input_full"
+					required
+        />
+        <center>
+          <button class="login_btn" onclick="javascript:VALIDATE()">
+            Register
+          </button>
+        </center>
+        <center>
+          <p style="font-size: 24px;color: #181818;"><strong>OR</strong></p>
+        </center>
+        <center>
+          <div
+            style="width: 80%;height: 0px;border: 1px solid black;margin-top: -5px"
+          ></div>
+        </center>
+        <center>
+          <img
+            src="signupgooglesac.jpg"
+            style="margin-top: 5px;height: 90px;width: 50%;"
+          />
+        </center>
+        <center>
+          <p style="font-size: 15px;margin-top: -10px;">
+            <strong
+              >Already have an account?
+              <a href="" style="text-decoration: none;color: blue;"
+                >Login</a
+              ></strong
+            >
+          </p>
+        </center>
+      </div>
+    </center>
+  </body>
+</html>
