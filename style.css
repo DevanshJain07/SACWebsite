@@ -139,7 +139,8 @@ body {
   font-size: 15px;
   color: black;
   height: 33px;
-  width: 15%;
+  margin-left: 20px;
+  width: 20%;
   border-color: #00000000;
   resize: none;
   font-family: aerial;

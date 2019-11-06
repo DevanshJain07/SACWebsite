@@ -58,13 +58,13 @@
     height: 100%;
     margin-top: -70px;
     border-bottom-right-radius: 30px;
-    background-color:black !important;
+    background-color: #1a1818 !important;
     float: left;
     min-height: 560px;
 }
 
 .navigation{
-background-color: black !important;
+background-color: #1a1818 !important;
 color: #676566;
 float: right;
 width: 200px;
